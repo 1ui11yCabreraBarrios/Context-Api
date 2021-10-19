@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
-
+import MyPageContext from "./ContextApi/MyPageContext";
+import MyPage from "./SinContext/Mypage";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <h1>React Context API</h1>
+      <a
+        href="https://es.reactjs.org/docs/context.html"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Documentación
+      </a>
+      <MyPageContext/>
+      <br/>
+      <hr/>
+      <MyPage />
     </div>
   );
 }
