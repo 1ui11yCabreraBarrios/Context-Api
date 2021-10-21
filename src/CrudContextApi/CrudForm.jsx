@@ -80,27 +80,27 @@ function CrudForm() {
         <h3>{dataToEdit ? "Editar Registro" :"Save Register"}</h3>
         <form onSubmit={handleSubmit} >
             
-            <input type="text" name="marca" placeholder="Marca"
+            <input type="text" name="marca" placeholder={texts.headerTitle5}
             value={form.marca}
             onChange={handleChange}/>
-            <input type="text" name="modelo" placeholder="Modelo"
+            <input type="text" name="modelo" placeholder={texts.headerTitle6}
             value={form.modelo}
             onChange={handleChange}
             onInput={toInputUppercase}
            />
-            <input type="text" name="color" placeholder="Color"
+            <input type="text" name="color" placeholder={texts.headerTitle7}
             value={form.color}
             onChange={handleChange}/>
-            <input type="text" name="transmision" placeholder="Transmision"
+            <input type="text" name="transmision" placeholder={texts.headerTitle8}
             value={form.transmision}
             onChange={handleChange}/>
-            <input type="number" name="precio" placeholder="Precio"
+            <input type="number" name="precio" placeholder={texts.headerTitle9}
             value={form.precio}
             onChange={handleChange}/>
-            <input type="number" name="puertas" placeholder="Puertas"
+            <input type="number" name="puertas" placeholder={texts.headerTitle10}
             value={form.puertas}
             onChange={handleChange}/>
-            <input type="number" name="year" placeholder="Año"
+            <input type="number" name="year" placeholder={texts.headerTitle11}
             value={form.year}
             onChange={handleChange}/>
             <button type="submit">{texts.headerTitle3}</button>
