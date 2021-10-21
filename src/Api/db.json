@@ -1,0 +1,94 @@
+{
+  "autos": [
+    {
+      "id": 1,
+      "marca": "BMW",
+      "modelo": "Serie 3",
+      "year": "2020",
+      "precio": 30000,
+      "puertas": 4,
+      "color": "Blanco",
+      "transmision": "automatico"
+    },
+    {
+      "id": 4,
+      "marca": "Audi",
+      "modelo": "A6",
+      "year": 2020,
+      "precio": 35000,
+      "puertas": 4,
+      "color": "Negro",
+      "transmision": "automatico"
+    },
+    {
+      "id": 5,
+      "marca": "BMW",
+      "modelo": "Serie 5",
+      "year": 2016,
+      "precio": 70000,
+      "puertas": 4,
+      "color": "Rojo",
+      "transmision": "automatico"
+    },
+    {
+      "id": 6,
+      "marca": "Mercedes Benz",
+      "modelo": "Clase C",
+      "year": "2020",
+      "precio": 25000,
+      "puertas": "44",
+      "color": "Blanco",
+      "transmision": "automatico"
+    },
+    {
+      "marca": "Toyota",
+      "modelo": "2002",
+      "transmision": "automatico",
+      "precio": "35000",
+      "puertas": "4",
+      "color": "blanco",
+      "year": "2002",
+      "id": 1634202478245
+    },
+    {
+      "marca": "Toyota",
+      "modelo": "COROLLA",
+      "transmision": "automatico",
+      "precio": "35000",
+      "puertas": "4",
+      "color": "blanco",
+      "year": "2002",
+      "id": 1634246834252
+    },
+    {
+      "marca": "Toyota",
+      "modelo": "RAW",
+      "transmision": "automatico",
+      "precio": "45000",
+      "puertas": "4",
+      "color": "Blanco",
+      "year": "2005",
+      "id": 1634247655184
+    },
+    {
+      "marca": "Toyota",
+      "modelo": "COROLLA",
+      "transmision": "automatico",
+      "precio": "27000",
+      "puertas": "4",
+      "color": "Blanco y negro",
+      "year": "2002",
+      "id": 1634798982244
+    },
+    {
+      "marca": "Toyota",
+      "modelo": "RAW",
+      "transmision": "mecanico",
+      "precio": "2000",
+      "puertas": "2",
+      "color": "blanco",
+      "year": "2015",
+      "id": 1634803823800
+    }
+  ]
+}
