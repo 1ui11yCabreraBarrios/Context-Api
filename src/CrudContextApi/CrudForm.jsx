@@ -1,6 +1,6 @@
 import React,{useContext, useEffect} from 'react';
 import { useHistory } from "react-router-dom";
-import CrudContext from './CrudContextApi';
+import CrudContext from './Context/CrudContextApi';
 
 const initialForm={
     marca:"",
@@ -18,7 +18,7 @@ const initialForm={
 
 function CrudForm() {
 
-    const {createData,updateData,dataToEdit,setDataToEdit} =useContext(CrudContext);
+    const {createData,updateData,dataToEdit,setDataToEdit,texts} =useContext(CrudContext);
 
     const[form,setForm]=React.useState(initialForm);
     let history= useHistory();
@@ -76,9 +76,9 @@ function CrudForm() {
       };
 
     return (
-        <div>
-        <h3>{dataToEdit ? "Editar" :"Guardar"}</h3>
-        <form onSubmit={handleSubmit}>
+        <div >
+        <h3>{dataToEdit ? "Editar Registro" :"Save Register"}</h3>
+        <form onSubmit={handleSubmit} >
             
             <input type="text" name="marca" placeholder="Marca"
             value={form.marca}
@@ -103,8 +103,8 @@ function CrudForm() {
             <input type="number" name="year" placeholder="Año"
             value={form.year}
             onChange={handleChange}/>
-            <button type="submit">Guardar</button>
-            <button type="reset" value="reset" onClick={handleReset}>Limpiar</button>
+            <button type="submit">{texts.headerTitle3}</button>
+            <button type="reset" value="reset" onClick={handleReset}>{texts.headerTitle4}</button>
         </form>
     </div>
     )

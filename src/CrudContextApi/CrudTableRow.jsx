@@ -1,10 +1,10 @@
 import React, { useContext } from 'react'
 import { useHistory } from "react-router-dom";
-import CrudContext from './CrudContextApi';
+import CrudContext from './Context/CrudContextApi';
 
 function CrudTableRow({value}) {
 
-    const {setDataToEdit,deleteData}=useContext(CrudContext)
+    const {setDataToEdit,deleteData,texts,theme}=useContext(CrudContext)
 
     let {marca,modelo,color,transmision,precio,puertas,year,id}= value;
     let history =useHistory()
@@ -14,7 +14,7 @@ function CrudTableRow({value}) {
     }
    
     return (
-        <tr>
+        <tr className={theme}>
     
         <td>{marca}</td>
         <td>{modelo}</td>
@@ -24,8 +24,8 @@ function CrudTableRow({value}) {
         <td>{puertas}</td>
         <td>{year}</td>
         
-        <td><button onClick={handleEdit}>Editar</button>
-        <button onClick={() => deleteData(id)} style={{margin:"1rem"}}>Eliminar</button></td>
+        <td><button onClick={handleEdit}>{texts.headerTitle13}</button>
+        <button onClick={() => deleteData(id)} style={{margin:"1rem"}}>{texts.headerTitle14}</button></td>
         </tr>
         
                     

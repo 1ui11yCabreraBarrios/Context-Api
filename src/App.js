@@ -1,7 +1,8 @@
 import MyPageContext from "./ContextApi/MyPageContext";
 import CrudApi from "./CrudContextApi/CrudApi";
-import { CrudProvider } from "./CrudContextApi/CrudContextApi";
+import { CrudProvider } from "./CrudContextApi/Context/CrudContextApi";
 import MyPage from "./SinContext/Mypage";
+import { LanguageProvider } from "./ContextApi/Context/LanguageContext";
 function App() {
   return (
     <div className="App">
@@ -13,9 +14,11 @@ function App() {
       >
         Documentación
       </a>
+      <LanguageProvider>
       <CrudProvider>
       <CrudApi/>
       </CrudProvider>
+      </LanguageProvider>
       <MyPageContext/>
       <br/>
       <hr/>

@@ -1,24 +1,25 @@
 import React, { useContext } from 'react';
-import CrudContext from './CrudContextApi';
+import CrudContext from './Context/CrudContextApi';
 import CrudTableRow from './CrudTableRow';
 function CrudTable() {
 
-    const {db:data} =useContext(CrudContext)
+    const {db:data,texts,theme} =useContext(CrudContext)
     return (
-        <div>
-        <h3>Tabla de Datos</h3>
-        <table>
+        <div className={theme}>
+        <h3  className={theme}>{texts.headerSubtitle1}</h3>
+        <table >
             <thead>
-                <tr>
+                <tr  className={theme}>
 
-                    <th>Marca</th>
-                    <th>Modelo</th>
-                    <th>Color</th>
-                    <th>Transmision</th>
-                    <th>Precio</th>
-                    <th>puertas</th>
-                    <th>Año</th>
-                    <th>Acciones</th>
+                    <th>{texts.headerTitle5}</th>
+                    <th>{texts.headerTitle6}</th>
+                    <th>{texts.headerTitle7}</th>
+                    <th>{texts.headerTitle8}</th>
+                    <th>{texts.headerTitle9}</th>
+                    <th>{texts.headerTitle10}</th>
+                    <th>{texts.headerTitle11}</th>
+                    <th>{texts.headerTitle12}</th>
+                   
                 </tr>
             </thead>
             <tbody>
